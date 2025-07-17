@@ -20,7 +20,8 @@ public class ActionsDemo {
 		WebDriver driver = new ChromeDriver();
         driver.get("https://www.amazon.in/");
         Actions act =new Actions(driver);
-        
+        Actions act1 =new Actions(driver);
+        Actions act2 =new Actions(driver);
        
         //multi element
         WebElement multi =driver.findElement(By.id("twotabsearchtextbox"));

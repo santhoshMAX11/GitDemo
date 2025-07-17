@@ -22,7 +22,9 @@ public class ActionsDemo {
         Actions act =new Actions(driver);
         Actions act1 =new Actions(driver);
         Actions act2 =new Actions(driver);
-       
+        Actions act5 =new Actions(driver);
+        Actions act6 =new Actions(driver);
+        Actions act4 =new Actions(driver);
         //multi element
         WebElement multi =driver.findElement(By.id("twotabsearchtextbox"));
        act.moveToElement(multi).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick().build().perform();

@@ -25,6 +25,7 @@ public class ActionsDemo {
         Actions act5 =new Actions(driver);
         Actions act6 =new Actions(driver);
         Actions act4 =new Actions(driver);
+        
         //multi element
         WebElement multi =driver.findElement(By.id("twotabsearchtextbox"));
        act.moveToElement(multi).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick().build().perform();
@@ -39,7 +40,16 @@ public class ActionsDemo {
       //  WebElement draggable= driver.findElement(By.id("nav_cs_2"));
         //WebElement dropable = driver.findElement(By.id("twotabsearchtextbox"));
         //act.dragAndDrop(draggable,dropable ).perform();
-        
+        System.setProperty("WebDriver.Chrome.driver", "C:\\Users\\testi\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+		WebDriver drive = new ChromeDriver();
+        driver.get("https://www.amazon.in/");
+        Actions act11 =new Actions(driver);
+        Actions act12 =new Actions(driver);
+        Actions act23 =new Actions(driver);
+        Actions act52=new Actions(driver);
+        Actions act62=new Actions(driver);
+        Actions act45 =new Actions(driver);
+
 	}
 
 }
